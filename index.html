@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lycée Monseigneur Shaumba – Gombe, Kinshasa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf8f3; --surface:#ffffff; --ink:#1b2433; --muted:#5b6678; --line:#d9d4c7;
+  --blue:#14305a; --blue-ink:#ffffff; --gold:#b9801f; --soft:#eef1f6;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1520; --surface:#172030; --ink:#e8ebf1; --muted:#a3adbf; --line:#2b3548;
+  --blue:#0b1a33; --blue-ink:#f4f6fa; --gold:#e0a747; --soft:#131c2b; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#0f1520; --surface:#172030; --ink:#e8ebf1; --muted:#a3adbf; --line:#2b3548;
+  --blue:#0b1a33; --blue-ink:#f4f6fa; --gold:#e0a747; --soft:#131c2b; color-scheme:dark;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0 0 .6em;font-weight:700}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;flex-wrap:wrap}
+.brand{font:700 1.05rem Fraunces,Georgia,serif;text-decoration:none}
+nav{display:flex;gap:18px;flex-wrap:wrap;font-weight:600;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted);padding:6px 0}
+nav a:hover{color:var(--ink)}
+.hero{background:var(--blue);color:var(--blue-ink);padding:72px 0 64px}
+.hero h1{font-size:clamp(2.4rem,7.5vw,4.8rem);max-width:12ch;margin-bottom:.35em}
+.hero p{max-width:52ch;font-size:1.2rem;margin:0 0 28px;opacity:.92}
+.since{display:inline-block;border-left:4px solid var(--gold);padding-left:12px;margin-bottom:22px;font-weight:600}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:600;text-decoration:none;background:var(--gold);color:#1b1405;margin:0 10px 10px 0}
+.btn.alt{background:transparent;color:inherit;border:2px solid currentColor}
+section{padding:60px 0;border-bottom:1px solid var(--line)}
+section h2{font-size:clamp(1.7rem,4vw,2.3rem)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.facts{margin:0;padding:0;list-style:none;border-left:3px solid var(--gold);padding-left:20px}
+.facts li{padding:8px 0;border-bottom:1px solid var(--line)}
+.facts li:last-child{border:0}
+.facts b{font-family:Fraunces,Georgia,serif}
+.levels{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.box{background:var(--surface);border:1px solid var(--line);padding:20px;border-radius:4px}
+.box h3{font-size:1.2rem}
+.hidden{display:none!important}.todo{color:var(--muted);font-style:italic}
+.news{background:var(--soft);padding:24px;border-radius:4px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.cap{font-size:.9rem;color:var(--muted);margin:6px 0 0}.ph{aspect-ratio:4/3;display:grid;place-items:center;text-align:center;background:var(--soft);border:1px dashed var(--line);color:var(--muted);font-size:.9rem;padding:10px}
+footer{background:var(--blue);color:var(--blue-ink);padding:36px 0 44px;font-size:.95rem}
+footer a{text-decoration-color:var(--gold)}
+@media (max-width:720px){.cols{grid-template-columns:1fr;gap:24px}.hero{padding:48px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#accueil">Lycée Monseigneur Shaumba</a>
+  <nav aria-label="Navigation principale">
+    <a href="#apropos">Présentation</a><a href="#niveaux" id="n-niveaux">Niveaux</a><a href="#inscriptions">Inscriptions</a><a href="#actualites" id="n-actu">Actualités</a><a href="#galerie" id="n-gal">Galerie</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
+<main id="accueil">
+<div class="hero"><div class="wrap">
+  <div class="since">Au service des élèves de Kinshasa depuis 1961</div>
+  <h1>Lycée Monseigneur Shaumba</h1>
+  <p id="tagline">Un établissement de l’Église du Christ au Congo, à la Gombe.</p>
+  <a class="btn" href="#inscriptions">Inscrire mon enfant</a>
+  <a class="btn alt" href="#contact">Nous contacter</a>
+</div></div>
+<section id="apropos"><div class="wrap cols">
+  <div><h2>Une école de référence à la Gombe</h2><div id="about"></div></div>
+  <ul class="facts" aria-label="L’école en bref">
+    <li><b>Création :</b> 1961</li>
+    <li><b>Adresse :</b> <span id="f-address"></span></li>
+    <li><b>Élèves :</b> <span id="f-students"></span></li>
+    <li><b>Équipe :</b> <span id="f-staff"></span></li>
+    <li><b>Tutelle :</b> Église du Christ au Congo (ECC)</li>
+  </ul>
+</div></section>
+<section id="niveaux"><div class="wrap"><h2>Niveaux et options</h2><div class="levels" id="levels"></div></div></section>
+<section id="inscriptions"><div class="wrap cols">
+  <div><h2>Inscriptions</h2><div id="insc"></div></div>
+  <div class="box" id="docs-box"><h3>Documents à prévoir</h3><div id="docs"></div></div>
+</div></section>
+<section id="actualites"><div class="wrap"><h2>Actualités</h2><div id="news"></div></div></section>
+<section id="galerie"><div class="wrap"><h2>Galerie</h2><div class="gallery gal" id="gallery"></div></div></section>
+<section id="contact" style="border:0"><div class="wrap cols">
+  <div>
+    <h2>Contact</h2>
+    <p><b>Adresse :</b><br><span id="c-address"></span></p>
+    <p id="c-phone-p"><b>Téléphone :</b> <a id="c-phone" href="#"></a></p>
+    <p id="c-mail-p"><b>E-mail :</b> <a id="c-mail" href="#"></a></p>
+    <a class="btn" id="c-wa" href="#" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+    <a class="btn alt" style="color:var(--ink)" href="https://www.google.com/maps/search/?api=1&query=Lyc%C3%A9e+Monseigneur+Shaumba+Gombe+Kinshasa" target="_blank" rel="noopener">Voir sur Google Maps</a>
+  </div>
+  <div class="box" id="hours-box"><h3>Horaires du secrétariat</h3><div id="hours"></div></div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Lycée Monseigneur Shaumba, Kinshasa. Tous droits réservés.</div></footer>
+<script>
+var $=function(i){return document.getElementById(i)};
+function paras(el,text){el.textContent="";(text||"").split(/\n+/).forEach(function(t){if(t.trim()){var p=document.createElement("p");p.textContent=t;el.appendChild(p)}})}
+function hide(id,on){$(id).classList.toggle("hidden",on)}
+function box(title,text){var d=document.createElement("div");d.className="box";var h=document.createElement("h3");h.textContent=title;var p=document.createElement("p");p.textContent=text||"";d.appendChild(h);d.appendChild(p);return d}
+function render(s){
+  if(s.tagline)$("tagline").textContent=s.tagline;
+  paras($("about"),s.about);
+  $("f-address").textContent=s.address||"";$("c-address").textContent=s.address||"";
+  $("f-students").textContent=s.students||"";$("f-staff").textContent=s.staff||"";
+  var lv=$("levels");lv.textContent="";(s.levels||[]).forEach(function(l){lv.appendChild(box(l.title,l.text))});
+  var noLv=!(s.levels&&s.levels.length);hide("niveaux",noLv);hide("n-niveaux",noLv);
+  var ins=(s.inscription_text||"")+(s.fees?"\n"+s.fees:"");paras($("insc"),ins);
+  paras($("docs"),s.documents);hide("docs-box",!s.documents);
+  var nw=$("news");nw.textContent="";
+  (s.news||[]).forEach(function(n){var d=document.createElement("div");d.className="news";d.style.marginBottom="16px";
+    var h=document.createElement("h3");h.textContent=n.title;d.appendChild(h);
+    if(n.date){var t=document.createElement("p");t.className="cap";try{t.textContent=new Date(n.date).toLocaleDateString("fr-FR",{day:"numeric",month:"long",year:"numeric"})}catch(e){}d.appendChild(t)}
+    var b=document.createElement("div");paras(b,n.body);d.appendChild(b);nw.appendChild(d)});
+  var noN=!(s.news&&s.news.length);hide("actualites",noN);hide("n-actu",noN);
+  var g=$("gallery");g.textContent="";
+  (s.gallery||[]).forEach(function(x){var f=document.createElement("figure");f.style.margin="0";var i=document.createElement("img");i.src=x.image;i.alt=x.caption||"Photo du lycée";i.loading="lazy";f.appendChild(i);
+    if(x.caption){var c=document.createElement("p");c.className="cap";c.textContent=x.caption;f.appendChild(c)}g.appendChild(f)});
+  var noG=!(s.gallery&&s.gallery.length);hide("galerie",noG);hide("n-gal",noG);
+  hide("c-phone-p",!s.phone);if(s.phone){$("c-phone").textContent=s.phone;$("c-phone").href="tel:"+s.phone.replace(/[^+\d]/g,"")}
+  hide("c-mail-p",!s.email);if(s.email){$("c-mail").textContent=s.email;$("c-mail").href="mailto:"+s.email}
+  var wa=(s.whatsapp||"").replace(/\D/g,"");hide("c-wa",!wa);if(wa)$("c-wa").href="https://wa.me/"+wa;
+  paras($("hours"),s.hours);hide("hours-box",!s.hours);
+}
+fetch("content/site.json").then(function(r){return r.json()}).then(render).catch(function(){render({})});
+</script>
+</body>
+</html>

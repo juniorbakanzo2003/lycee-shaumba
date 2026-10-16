@@ -1,0 +1,19 @@
+SITE DU LYCEE SHAUMBA + ESPACE ADMIN (Decap CMS)
+
+Contenu du dossier
+- index.html        : le site (lit ses textes dans content/site.json)
+- content/site.json : toutes les informations modifiables
+- admin/            : l'espace d'administration (adresse : votresite.com/admin)
+- images/uploads/   : les photos ajoutées depuis l'admin
+
+Mise en place (une seule fois)
+1. Créez un compte GitHub et un dépôt (repository) "lycee-shaumba". Déposez-y tout ce dossier.
+2. Dans admin/config.yml, remplacez VOTRE-COMPTE/lycee-shaumba par le vrai nom du dépôt.
+3. Hébergez le dépôt sur Netlify, Cloudflare Pages ou GitHub Pages (gratuit) : à chaque modification, le site se met à jour tout seul.
+4. Connexion à /admin : Decap CMS avec GitHub demande un service d'authentification (OAuth).
+   Netlify et Cloudflare Pages proposent des guides pour cela. Autre option plus simple :
+   remplacer le script de admin/index.html par Sveltia CMS, qui accepte une connexion GitHub par jeton personnel.
+5. Ajoutez le compte GitHub du directeur comme collaborateur du dépôt : il pourra se connecter à /admin.
+
+Utilisation par la direction
+/admin > Contenu du site > modifier un champ > Publier. Le site est à jour en une minute environ.
