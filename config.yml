@@ -1,0 +1,49 @@
+backend:
+  name: github
+  repo: VOTRE-COMPTE/lycee-shaumba   # à remplacer
+  branch: main
+locale: fr
+media_folder: images/uploads
+public_folder: /images/uploads
+collections:
+  - name: site
+    label: Contenu du site
+    files:
+      - name: site
+        label: Toutes les informations
+        file: content/site.json
+        fields:
+          - {name: tagline, label: Phrase d'accroche (page d'accueil), widget: text, required: false}
+          - {name: about, label: Présentation de l'école, widget: text, required: false}
+          - {name: address, label: Adresse, widget: string}
+          - {name: students, label: Nombre d'élèves, widget: string, required: false}
+          - {name: staff, label: Équipe, widget: string, required: false}
+          - name: levels
+            label: Niveaux et options
+            widget: list
+            required: false
+            fields:
+              - {name: title, label: Titre, widget: string}
+              - {name: text, label: Description, widget: text}
+          - {name: inscription_text, label: Texte des inscriptions, widget: text, required: false}
+          - {name: fees, label: Frais de scolarité, widget: text, required: false}
+          - {name: documents, label: Documents à prévoir, widget: text, required: false}
+          - name: news
+            label: Actualités
+            widget: list
+            required: false
+            fields:
+              - {name: title, label: Titre, widget: string}
+              - {name: date, label: Date, widget: datetime, time_picker: false, required: false}
+              - {name: body, label: Texte, widget: text}
+          - name: gallery
+            label: Galerie photos
+            widget: list
+            required: false
+            fields:
+              - {name: image, label: Photo, widget: image}
+              - {name: caption, label: Légende, widget: string, required: false}
+          - {name: phone, label: Téléphone, widget: string, required: false}
+          - {name: whatsapp, label: Numéro WhatsApp (avec indicatif, ex. 243...), widget: string, required: false}
+          - {name: email, label: E-mail, widget: string, required: false}
+          - {name: hours, label: Horaires du secrétariat, widget: text, required: false}
